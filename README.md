@@ -21,15 +21,27 @@ server control software
 *   Python 3.8+
 *   `libmpv` (Linux only, for Flet media support)
 
-**1. Install Dependencies:**
+**1. Create Virtual Environment:**
+*   **Linux/macOS:**
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+*   **Windows:**
+    ```cmd
+    python -m venv .venv
+    .venv\Scripts\activate
+    ```
+
+**2. Install Dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-**2. Configure Server:**
+**3. Configure Server:**
 Edit `server/config.yaml` to set your authentication token and Cloudflared settings.
 
-**3. Run Application:**
+**4. Run Application:**
 
 *   **Linux/macOS:**
     *   Server: `./run_server.sh`
@@ -60,15 +72,27 @@ Edit `server/config.yaml` to set your authentication token and Cloudflared setti
 *   Python 3.8+
 *   `libmpv` (Sadece Linux için, Flet medya desteği için gereklidir)
 
-**1. Bağımlılıkları Yükleyin:**
+**1. Sanal Ortam (Virtual Env) Kurulumu:**
+*   **Linux/macOS:**
+    ```bash
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+*   **Windows:**
+    ```cmd
+    python -m venv .venv
+    .venv\Scripts\activate
+    ```
+
+**2. Bağımlılıkları Yükleyin:**
 ```bash
 pip install -r requirements.txt
 ```
 
-**2. Sunucuyu Yapılandırın:**
+**3. Sunucuyu Yapılandırın:**
 `server/config.yaml` dosyasını düzenleyerek yetkilendirme kodunuzu (token) ve Cloudflared ayarlarını yapın.
 
-**3. Uygulamayı Çalıştırın:**
+**4. Uygulamayı Çalıştırın:**
 
 *   **Linux/macOS:**
     *   Sunucu: `./run_server.sh`
